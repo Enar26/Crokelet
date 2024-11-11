@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croquetas para Perros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .producto {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            display: flex;
+            gap: 20px;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .producto-imagen {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .producto-info {
+            flex: 1;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 8px 0;
+            margin: 5px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li:before {
+            content: "🐾";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+
+        .btn-comprar {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .btn-comprar:hover {
+            background-color: #2980b9;
+        }
+
+        .formulario-contacto {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .formulario-contacto input,
+        .formulario-contacto textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+
+            .producto {
+                flex-direction: column;
+            }
+
+            .producto-imagen {
+                width: 100%;
+                height: auto;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <h1>Croquetas para Perros</h1>
+        
+        <div class="producto" id="productos">
+            <img src="https://via.placeholder.com/200" alt="Croquetas Premium" class="producto-imagen">
+            <div class="producto-info">
+                <h2>Croquetas Premium</h2>
+                <p>Elaboradas con ingredientes de alta calidad para mantener a tu mascota saludable.</p>
+                <ul>
+                    <li>Rico en proteínas</li>
+                    <li>Sin conservantes artificiales</li>
+                    <li>Vitaminas y minerales esenciales</li>
+                    <li>Ideal para todas las razas</li>
+                </ul>
+                <button class="btn-comprar">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="producto" id="beneficios">
+            <img src="https://via.placeholder.com/200" alt="Beneficios" class="producto-imagen">
+            <div class="producto-info">
+                <h2>Beneficios de nuestras croquetas</h2>
+                <ul>
+                    <li>Mejora la salud digestiva</li>
+                    <li>Fortalece el sistema inmunológico</li>
+                    <li>Mantiene el pelaje brillante</li>
+                    <li>Promueve dientes y huesos fuertes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/200" alt="Recomendaciones" class="producto-imagen">
+            <div class="producto-info">
+                <h2>Recomendaciones de alimentación</h2>
+                <p>La cantidad diaria recomendada depende del tamaño y edad de tu perro:</p>
+                <ul>
+                    <li>Perros pequeños: 100-200g por día</li>
+                    <li>Perros medianos: 200-350g por día</li>
+                    <li>Perros grandes: 350-500g por día</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="formulario-contacto" id="contacto">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit" class="btn-comprar">Enviar mensaje</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>© 2024 Croquetas para Perros. Todos los derechos reservados.</p>
+            <p>Síguenos en nuestras redes sociales</p>
+            <p>Teléfono: (123) 456-7890 | Email: info@croquetasperros.com</p>
+        </footer>
+    </div>
+</body>
+</html>
