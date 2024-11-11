@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crokelet - Tu tienda de mascotas</title>
+    <title>Crokelet - Nutrición experta para mascotas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,36 +21,73 @@
         <div class="logo">Cro<span>kelet</span></div>
 
         <div class="hero-section">
-           <h1>Bienvenidos a Crokelet</h1>
-           <p>Tu tienda especializada en alimentación y cuidado para mascotas</p>
-           <button class="btn-comprar">Ver Productos</button>
+            <h1>Nutrición Experta para tu Mascota</h1>
+            <p>Alimentación de calidad y cuidados especializados para el bienestar de tu mejor amigo</p>
+            <button class="btn-comprar" onclick="location.href='productos.html'">Ver Productos</button>
+        </div>
+
+        <div class="eslogan">
+            <h2>¿Por qué elegir Crokelet?</h2>
+            <p>Nos especializamos en nutrición de alta calidad y productos premium para el bienestar de tus mascotas</p>
         </div>
 
         <div class="categorias">
             <a href="productos.html#perros" class="categoria-card">
-                <img src="https://via.placeholder.com/300" alt="Productos para Perros">
+                <img src="https://via.placeholder.com/300" alt="Alimentos para Perros">
                 <h3>Perros</h3>
-                <p>Alimentos y accesorios para tu mejor amigo</p>
+                <p>Nutrición especializada y snacks saludables</p>
             </a>
             <a href="productos.html#gatos" class="categoria-card">
-                <img src="https://via.placeholder.com/300" alt="Productos para Gatos">
+                <img src="https://via.placeholder.com/300" alt="Alimentos para Gatos">
                 <h3>Gatos</h3>
-                <p>Todo lo que tu felino necesita</p>
+                <p>Alimentación balanceada y premios</p>
             </a>
             <a href="servicios.html" class="categoria-card">
-                <img src="https://via.placeholder.com/300" alt="Servicios">
+                <img src="https://via.placeholder.com/300" alt="Servicios Veterinarios">
                 <h3>Servicios</h3>
-                <p>Veterinaria y grooming profesional</p>
+                <p>Asesoría nutricional y cuidado integral</p>
             </a>
         </div>
 
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="https://via.placeholder.com/300" alt="Crokelet Premium">
+                <div class="producto-info">
+                    <h3>Crokelet Premium</h3>
+                    <p>Fórmula especial para perros adultos</p>
+                    <p class="precio">$599.99</p>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="https://via.placeholder.com/300" alt="Crokelet Gatitos">
+                <div class="producto-info">
+                    <h3>Crokelet Gatitos</h3>
+                    <p>Nutrición especial para gatitos</p>
+                    <p class="precio">$499.99</p>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="https://via.placeholder.com/300" alt="Snacks Saludables">
+                <div class="producto-info">
+                    <h3>Snacks Saludables</h3>
+                    <p>Premios nutritivos y deliciosos</p>
+                    <p class="precio">$199.99</p>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
         <div class="formulario-contacto">
-            <h2>¿Tienes alguna pregunta?</h2>
+            <h2>¿Tienes dudas sobre la nutrición de tu mascota?</h2>
             <form>
                 <input type="text" placeholder="Nombre" required>
                 <input type="email" placeholder="Email" required>
-                <textarea placeholder="Mensaje" rows="4" required></textarea>
-                <button type="submit" class="btn-comprar">Enviar mensaje</button>
+                <textarea placeholder="Tu consulta" rows="4" required></textarea>
+                <button type="submit" class="btn-comprar">Enviar consulta</button>
             </form>
         </div>
 
