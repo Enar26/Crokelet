@@ -5,47 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - Crokelet</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .filtros {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .filtro-btn {
-            padding: 10px 20px;
-            border: 2px solid #4ecdc4;
-            border-radius: 25px;
-            background: white;
-            color: #4ecdc4;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-
-        .filtro-btn.activo,
-        .filtro-btn:hover {
-            background: #4ecdc4;
-            color: white;
-        }
-
-        .etiqueta-nuevo {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #ff6b6b;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-size: 0.9em;
-        }
-
-        .producto-card {
-            position: relative;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -59,7 +18,9 @@
             </ul>
         </nav>
 
-        <div class="logo">Cro<span>kelet</span></div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Crokelet Logo" class="logo-img">
+        </div>
 
         <h1>Nuestros Productos</h1>
 
@@ -133,16 +94,6 @@
                     <button class="btn-comprar">Agregar al carrito</button>
                 </div>
             </div>
-        </div>
-
-        <div class="formulario-contacto">
-            <h2>¿No encuentras lo que buscas?</h2>
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Cuéntanos qué producto necesitas" rows="4" required></textarea>
-                <button type="submit" class="btn-comprar">Enviar consulta</button>
-            </form>
         </div>
 
         <footer>
