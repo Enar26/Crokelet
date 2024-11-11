@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Super DogCats</title>
+    <title>Productos - Crokelet</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .filtros {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filtro-btn {
+            padding: 10px 20px;
+            border: 2px solid #4ecdc4;
+            border-radius: 25px;
+            background: white;
+            color: #4ecdc4;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .filtro-btn.activo,
+        .filtro-btn:hover {
+            background: #4ecdc4;
+            color: white;
+        }
+
+        .etiqueta-nuevo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .producto-card {
+            position: relative;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -18,46 +59,96 @@
             </ul>
         </nav>
 
-        <div class="logo">Super<span>DogCats</span></div>
+        <div class="logo">Cro<span>kelet</span></div>
 
         <h1>Nuestros Productos</h1>
 
+        <div class="filtros">
+            <button class="filtro-btn activo">Todos</button>
+            <button class="filtro-btn">Perros</button>
+            <button class="filtro-btn">Gatos</button>
+            <button class="filtro-btn">Snacks</button>
+            <button class="filtro-btn">Accesorios</button>
+        </div>
+
         <div class="productos-grid">
             <div class="producto-card">
-                <img src="https://via.placeholder.com/300" alt="Croquetas Premium">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <img src="https://via.placeholder.com/300" alt="Crokelet Premium">
                 <div class="producto-info">
-                    <h3>Croquetas Premium</h3>
-                    <p>Alimento balanceado para perros adultos</p>
+                    <h3>Crokelet Premium Adulto</h3>
+                    <p>Fórmula especial con proteínas de alta calidad</p>
                     <p class="precio">$599.99</p>
                     <button class="btn-comprar">Agregar al carrito</button>
                 </div>
             </div>
 
             <div class="producto-card">
-                <img src="https://via.placeholder.com/300" alt="Alimento para Gatos">
+                <img src="https://via.placeholder.com/300" alt="Crokelet Cachorro">
                 <div class="producto-info">
-                    <h3>Alimento para Gatos</h3>
-                    <p>Nutrición completa para gatos</p>
-                    <p class="precio">$499.99</p>
+                    <h3>Crokelet Cachorro</h3>
+                    <p>Nutrición especial para el crecimiento</p>
+                    <p class="precio">$649.99</p>
                     <button class="btn-comprar">Agregar al carrito</button>
                 </div>
             </div>
 
             <div class="producto-card">
-                <img src="https://via.placeholder.com/300" alt="Juguetes">
+                <img src="https://via.placeholder.com/300" alt="Crokelet Gatos">
                 <div class="producto-info">
-                    <h3>Kit de Juguetes</h3>
-                    <p>Set completo de juguetes</p>
-                    <p class="precio">$299.99</p>
+                    <h3>Crokelet Gatos</h3>
+                    <p>Control de bolas de pelo</p>
+                    <p class="precio">$549.99</p>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <img src="https://via.placeholder.com/300" alt="Snacks Dentales">
+                <div class="producto-info">
+                    <h3>Snacks Dentales</h3>
+                    <p>Higiene dental y diversión</p>
+                    <p class="precio">$199.99</p>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="https://via.placeholder.com/300" alt="Crokelet Senior">
+                <div class="producto-info">
+                    <h3>Crokelet Senior</h3>
+                    <p>Fórmula para perros mayores</p>
+                    <p class="precio">$629.99</p>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="https://via.placeholder.com/300" alt="Crokelet Light">
+                <div class="producto-info">
+                    <h3>Crokelet Light</h3>
+                    <p>Control de peso y bienestar</p>
+                    <p class="precio">$579.99</p>
                     <button class="btn-comprar">Agregar al carrito</button>
                 </div>
             </div>
         </div>
 
+        <div class="formulario-contacto">
+            <h2>¿No encuentras lo que buscas?</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Cuéntanos qué producto necesitas" rows="4" required></textarea>
+                <button type="submit" class="btn-comprar">Enviar consulta</button>
+            </form>
+        </div>
+
         <footer>
-            <p>© 2024 Super DogCats. Todos los derechos reservados.</p>
+            <p>© 2024 Crokelet. Todos los derechos reservados.</p>
             <p>Dirección: Calle Principal #123, Ciudad</p>
-            <p>Teléfono: (123) 456-7890 | Email: info@superdogcats.com</p>
+            <p>Teléfono: (123) 456-7890 | Email: info@crokelet.com</p>
         </footer>
     </div>
 </body>
