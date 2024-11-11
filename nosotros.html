@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Super DogCats</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para la página Nosotros */
+        .historia-section {
+            padding: 40px;
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .equipo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .miembro-equipo {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .miembro-equipo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .valor-card {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            border: 2px solid #3498db;
+        }
+
+        .valor-card i {
+            font-size: 2em;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .certificaciones {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .certificacion {
+            text-align: center;
+            width: 150px;
+        }
+
+        .certificacion img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .timeline-item {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            position: relative;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">Super<span>DogCats</span></div>
+
+        <div class="historia-section">
+            <h1>Nuestra Historia</h1>
+            <p>Fundada en 2015, Super DogCats nació de la pasión por el bienestar animal y el compromiso de proporcionar los mejores productos y servicios para mascotas. Lo que comenzó como una pequeña tienda local se ha convertido en un referente en el cuidado de mascotas en nuestra comunidad.</p>
+        </div>
+
+        <h2>Nuestros Valores</h2>
+        <div class="valores-grid">
+            <div class="valor-card">
+                <i>🐾</i>
+                <h3>Compromiso</h3>
+                <p>Dedicación total al bienestar de las mascotas</p>
+            </div>
+            <div class="valor-card">
+                <i>💝</i>
+                <h3>Calidad</h3>
+                <p>Solo los mejores productos y servicios</p>
+            </div>
+            <div class="valor-card">
+                <i>🤝</i>
+                <h3>Confianza</h3>
+                <p>Construimos relaciones duraderas con nuestros clientes</p>
+            </div>
+            <div class="valor-card">
+                <i>📚</i>
+                <h3>Experiencia</h3>
+                <p>Conocimiento y profesionalismo en cada servicio</p>
+            </div>
+        </div>
+
+        <h2>Nuestro Equipo</h2>
+        <div class="equipo-grid">
+            <div class="miembro-equipo">
+                <img src="https://via.placeholder.com/150" alt="Director">
+                <h3>Dr. Carlos Rodríguez</h3>
+                <p>Director General</p>
+                <p>Veterinario con más de 15 años de experiencia</p>
+            </div>
+            <div class="miembro-equipo">
+                <img src="https://via.placeholder.com/150" alt="Veterinaria">
+                <h3>Dra. Ana Martínez</h3>
+                <p>Veterinaria Principal</p>
+                <p>Especialista en medicina preventiva</p>
+            </div>
+            <div class="miembro-equipo">
+                <img src="https://via.placeholder.com/150" alt="Groomer">
+                <h3>Laura Sánchez</h3>
+                <p>Groomer Profesional</p>
+                <p>Experta en estética canina y felina</p>
+            </div>
+        </div>
+
+        <h2>Nuestra Trayectoria</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2015</h3>
+                <p>Apertura de nuestra primera tienda</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2017</h3>
+                <p>Incorporación de servicios veterinarios</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2019</h3>
+                <p>Expansión de instalaciones y servicios de grooming</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2021</h3>
+                <p>Inauguración de hotel para mascotas</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2024</h3>
+                <p>Lanzamiento de servicios en línea</p>
+            </div>
+        </div>
+
+        <h2>Certificaciones y Reconocimientos</h2>
+        <div class="certificaciones">
+            <div class="certificacion">
+                <img src="https://via.placeholder.com/100" alt="Certificación 1">
+                <p>Certificación Veterinaria Nacional</p>
+            </div>
+            <div class="certificacion">
+                <img src="https://via.placeholder.com/100" alt="Certificación 2">
+                <p>Premio Mejor Servicio al Cliente 2023</p>
+            </div>
+            <div class="certificacion">
+                <img src="https://via.placeholder.com/100" alt="Certificación 3">
+                <p>Certificación de Calidad ISO 9001</p>
+            </div>
+        </div>
+
+        <div class="formulario-contacto">
+            <h2>¿Quieres formar parte de nuestro equipo?</h2>
+            <form>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono">
+                <textarea placeholder="Cuéntanos sobre ti y tu experiencia" rows="4" required></textarea>
+                <button type="submit" class="btn-comprar">Enviar solicitud</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>© 2024 Super DogCats. Todos los derechos reservados.</p>
+            <p>Dirección: Calle Principal #123, Ciudad</p>
+            <p>Teléfono: (123) 456-7890 | Email: info@superdogcats.com</p>
+        </footer>
+    </div>
+</body>
+</html>
