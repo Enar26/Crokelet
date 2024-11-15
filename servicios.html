@@ -3,113 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios profesionales para el cuidado de tu mascota - Crokelet">
     <title>Servicios - Crokelet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div class="logo">
-            <img src="images/logo.png" alt="Crokelet Logo" class="logo-img">
-        </div>
-
-        <h1>Nuestros Servicios</h1>
-
-        <div class="servicio-card">
-            <img src="https://via.placeholder.com/300x200" alt="Asesoría Nutricional" class="servicio-imagen">
-            <div class="servicio-info">
-                <h2>Asesoría Nutricional</h2>
-                <p>Nuestros expertos te ayudarán a elegir la mejor alimentación para tu mascota según su edad, raza y necesidades específicas.</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://via.placeholder.com/200x80?text=Crokelet" alt="Crokelet Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="main-nav">
                 <ul>
-                    <li>Evaluación personalizada</li>
-                    <li>Plan de alimentación a medida</li>
-                    <li>Seguimiento mensual</li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="productos.html"><i class="fas fa-bone"></i> Productos</a></li>
+                    <li><a href="servicios.html" class="active"><i class="fas fa-stethoscope"></i> Servicios</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
                 </ul>
-                <p class="precio-desde">Desde $299.99</p>
-                <button class="btn-comprar">Agendar consulta</button>
+            </nav>
+            <div class="nav-icons">
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             </div>
         </div>
+    </header>
 
-        <div class="servicio-card">
-            <img src="https://via.placeholder.com/300x200" alt="Control Veterinario" class="servicio-imagen">
-            <div class="servicio-info">
-                <h2>Control Veterinario</h2>
-                <p>Revisiones periódicas para mantener la salud de tu mascota en óptimas condiciones.</p>
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="servicios-hero" style="background-image: url('https://images.unsplash.com/photo-1587764379873-97837921fd44?w=1200')">
+            <div class="hero-content">
+                <h1>Nuestros Servicios</h1>
+                <p>Cuidado profesional y especializado para tu mascota</p>
+            </div>
+        </section>
+
+        <!-- Servicios Grid -->
+        <section class="servicios-section">
+            <!-- Asesoría Nutricional -->
+            <div class="servicio-card">
+                <div class="servicio-imagen">
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=500" alt="Asesoría Nutricional">
+                </div>
+                <div class="servicio-info">
+                    <div class="servicio-header">
+                        <i class="fas fa-apple-alt"></i>
+                        <h2>Asesoría Nutricional</h2>
+                        <span class="badge">Popular</span>
+                    </div>
+                    <p>Nuestros expertos te ayudarán a elegir la mejor alimentación para tu mascota según su edad, raza y necesidades específicas.</p>
+                    <div class="servicio-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Evaluación personalizada</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Plan de alimentación a medida</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Seguimiento mensual</span>
+                        </div>
+                    </div>
+                    <div class="servicio-precio">
+                        <span class="precio-desde">Desde</span>
+                        <span class="precio">$299.99</span>
+                        <span class="precio-periodo">/consulta</span>
+                    </div>
+                    <button class="btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Agendar consulta
+                    </button>
+                </div>
+            </div>
+
+            <!-- Control Veterinario -->
+            <div class="servicio-card">
+                <div class="servicio-imagen">
+                    <img src="https://images.unsplash.com/photo-1628009368231-7bb7cf5bd525?w=500" alt="Control Veterinario">
+                </div>
+                <div class="servicio-info">
+                    <div class="servicio-header">
+                        <i class="fas fa-heartbeat"></i>
+                        <h2>Control Veterinario</h2>
+                        <span class="badge">Esencial</span>
+                    </div>
+                    <p>Revisiones periódicas para mantener la salud de tu mascota en óptimas condiciones.</p>
+                    <div class="servicio-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Examen físico completo</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Control de peso</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Vacunación</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Desparasitación</span>
+                        </div>
+                    </div>
+                    <div class="servicio-precio">
+                        <span class="precio-desde">Desde</span>
+                        <span class="precio">$399.99</span>
+                        <span class="precio-periodo">/consulta</span>
+                    </div>
+                    <button class="btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Reservar cita
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grooming -->
+            <div class="servicio-card">
+                <div class="servicio-imagen">
+                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=500" alt="Grooming">
+                </div>
+                <div class="servicio-info">
+                    <div class="servicio-header">
+                        <i class="fas fa-cut"></i>
+                        <h2>Servicio de Grooming</h2>
+                        <span class="badge">Completo</span>
+                    </div>
+                    <p>Cuidado estético profesional para que tu mascota luzca y se sienta increíble.</p>
+                    <div class="servicio-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Baño y secado</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Corte de pelo</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Corte de uñas</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Limpieza de oídos</span>
+                        </div>
+                    </div>
+                    <div class="servicio-precio">
+                        <span class="precio-desde">Desde</span>
+                        <span class="precio">$349.99</span>
+                        <span class="precio-periodo">/sesión</span>
+                    </div>
+                    <button class="btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Agendar servicio
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horarios -->
+        <section class="horarios-section">
+            <h2><i class="fas fa-clock"></i> Horarios de Atención</h2>
+            <div class="horario-grid">
+                <div class="horario-card">
+                    <div class="horario-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Lunes a Viernes</h3>
+                    <p>9:00 AM - 7:00 PM</p>
+                </div>
+                <div class="horario-card">
+                    <div class="horario-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Sábados</h3>
+                    <p>10:00 AM - 6:00 PM</p>
+                </div>
+                <div class="horario-card">
+                    <div class="horario-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Domingos</h3>
+                    <p>10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Cita -->
+        <section class="cita-section">
+            <div class="cita-container">
+                <div class="cita-info">
+                    <h2><i class="fas fa-calendar-check"></i> Agenda tu cita</h2>
+                    <p>Reserva tu cita con nuestros especialistas y dale a tu mascota el cuidado que merece.</p>
+                    <div class="contacto-info">
+                        <div class="contacto-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(123) 456-7890</span>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>citas@crokelet.com</span>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Calle Principal #123, Ciudad</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="cita-form">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Nombre del dueño</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-paw"></i> Nombre de la mascota</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Teléfono</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-concierge-bell"></i> Servicio</label>
+                        <select required>
+                            <option value="">Selecciona el servicio</option>
+                            <option value="nutricion">Asesoría Nutricional</option>
+                            <option value="veterinario">Control Veterinario</option>
+                            <option value="grooming">Grooming</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-comment"></i> Comentarios</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar solicitud
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Qué incluye la consulta nutricional?</h3>
+                    <p>La consulta incluye evaluación física, análisis de hábitos alimenticios y plan personalizado.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Cada cuánto debo llevar a mi mascota al veterinario?</h3>
+                    <p>Recomendamos revisiones cada 6 meses para mascotas adultas y cada 3 meses para cachorros.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Cuánto dura una sesión de grooming?</h3>
+                    <p>El servicio completo toma aproximadamente 2-3 horas, dependiendo del tamaño y condición del pelaje.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Principal #123</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@crokelet.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
                 <ul>
-                    <li>Examen físico completo</li>
-                    <li>Control de peso</li>
-                    <li>Vacunación</li>
-                    <li>Desparasitación</li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Política de Cancelación</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Términos y Condiciones</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Preguntas Frecuentes</a></li>
                 </ul>
-                <p class="precio-desde">Desde $399.99</p>
-                <button class="btn-comprar">Reservar cita</button>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
-
-        <div class="servicio-card">
-            <img src="https://via.placeholder.com/300x200" alt="Grooming" class="servicio-imagen">
-            <div class="servicio-info">
-                <h2>Servicio de Grooming</h2>
-                <p>Cuidado estético profesional para que tu mascota luzca y se sienta increíble.</p>
-                <ul>
-                    <li>Baño y secado</li>
-                    <li>Corte de pelo</li>
-                    <li>Corte de uñas</li>
-                    <li>Limpieza de oídos</li>
-                </ul>
-                <p class="precio-desde">Desde $349.99</p>
-                <button class="btn-comprar">Agendar servicio</button>
-            </div>
-        </div>
-
-        <h2>Horarios de Atención</h2>
-        <div class="horario-grid">
-            <div class="horario-item">
-                <h3>Lunes a Viernes</h3>
-                <p>9:00 AM - 7:00 PM</p>
-            </div>
-            <div class="horario-item">
-                <h3>Sábados</h3>
-                <p>10:00 AM - 6:00 PM</p>
-            </div>
-            <div class="horario-item">
-                <h3>Domingos</h3>
-                <p>10:00 AM - 2:00 PM</p>
-            </div>
-        </div>
-
-        <div class="formulario-contacto">
-            <h2>Agenda tu cita</h2>
-            <form>
-                <input type="text" placeholder="Nombre del dueño" required>
-                <input type="text" placeholder="Nombre de la mascota" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Teléfono" required>
-                <select required>
-                    <option value="">Selecciona el servicio</option>
-                    <option value="nutricion">Asesoría Nutricional</option>
-                    <option value="veterinario">Control Veterinario</option>
-                    <option value="grooming">Grooming</option>
-                </select>
-                <textarea placeholder="Comentarios adicionales" rows="4"></textarea>
-                <button type="submit" class="btn-comprar">Agendar cita</button>
-            </form>
-        </div>
-
-        <footer>
+        <div class="footer-bottom">
             <p>© 2024 Crokelet. Todos los derechos reservados.</p>
-            <p>Dirección: Calle Principal #123, Ciudad</p>
-            <p>Teléfono: (123) 456-7890 | Email: info@crokelet.com</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Menú móvil
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('show');
+        });
+
+        // Animación de scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.servicio-card, .horario-card, .faq-item');
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('animate');
+                }
+            });
+        });
+
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    </script>
 </body>
 </html>
