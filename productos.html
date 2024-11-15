@@ -3,104 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre nuestra línea completa de productos para mascotas - Crokelet">
     <title>Productos - Crokelet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div class="logo">
-            <img src="images/logo.png" alt="Crokelet Logo" class="logo-img">
-        </div>
-
-        <h1>Nuestros Productos</h1>
-
-        <div class="filtros">
-            <button class="filtro-btn activo">Todos</button>
-            <button class="filtro-btn">Perros</button>
-            <button class="filtro-btn">Gatos</button>
-            <button class="filtro-btn">Snacks</button>
-            <button class="filtro-btn">Accesorios</button>
-        </div>
-
-        <div class="productos-grid">
-            <div class="producto-card">
-                <span class="etiqueta-nuevo">Nuevo</span>
-                <img src="https://via.placeholder.com/300" alt="Crokelet Premium">
-                <div class="producto-info">
-                    <h3>Crokelet Premium Adulto</h3>
-                    <p>Fórmula especial con proteínas de alta calidad</p>
-                    <p class="precio">$599.99</p>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Crokelet Logo" class="logo-img">
+                </a>
             </div>
-
-            <div class="producto-card">
-                <img src="https://via.placeholder.com/300" alt="Crokelet Cachorro">
-                <div class="producto-info">
-                    <h3>Crokelet Cachorro</h3>
-                    <p>Nutrición especial para el crecimiento</p>
-                    <p class="precio">$649.99</p>
-                    <button class="btn-comprar">Agregar al carrito</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="productos.html" class="active"><i class="fas fa-bone"></i> Productos</a></li>
+                    <li><a href="servicios.html"><i class="fas fa-stethoscope"></i> Servicios</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar productos...">
+                    <button><i class="fas fa-search"></i></button>
                 </div>
-            </div>
-
-            <div class="producto-card">
-                <img src="https://via.placeholder.com/300" alt="Crokelet Gatos">
-                <div class="producto-info">
-                    <h3>Crokelet Gatos</h3>
-                    <p>Control de bolas de pelo</p>
-                    <p class="precio">$549.99</p>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-            </div>
-
-            <div class="producto-card">
-                <span class="etiqueta-nuevo">Nuevo</span>
-                <img src="https://via.placeholder.com/300" alt="Snacks Dentales">
-                <div class="producto-info">
-                    <h3>Snacks Dentales</h3>
-                    <p>Higiene dental y diversión</p>
-                    <p class="precio">$199.99</p>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-            </div>
-
-            <div class="producto-card">
-                <img src="https://via.placeholder.com/300" alt="Crokelet Senior">
-                <div class="producto-info">
-                    <h3>Crokelet Senior</h3>
-                    <p>Fórmula para perros mayores</p>
-                    <p class="precio">$629.99</p>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-            </div>
-
-            <div class="producto-card">
-                <img src="https://via.placeholder.com/300" alt="Crokelet Light">
-                <div class="producto-info">
-                    <h3>Crokelet Light</h3>
-                    <p>Control de peso y bienestar</p>
-                    <p class="precio">$579.99</p>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             </div>
         </div>
+    </header>
 
-        <footer>
+    <main class="container">
+        <!-- Banner de productos -->
+        <section class="productos-hero">
+            <h1>Nuestros Productos</h1>
+            <p>Nutrición de calidad para el bienestar de tu mascota</p>
+        </section>
+
+        <!-- Filtros y Ordenamiento -->
+        <section class="filtros-section">
+            <div class="filtros-container">
+                <div class="filtros-grupo">
+                    <h3>Categorías</h3>
+                    <button class="filtro-btn activo" data-filter="todos">
+                        <i class="fas fa-th-large"></i> Todos
+                    </button>
+                    <button class="filtro-btn" data-filter="perros">
+                        <i class="fas fa-dog"></i> Perros
+                    </button>
+                    <button class="filtro-btn" data-filter="gatos">
+                        <i class="fas fa-cat"></i> Gatos
+                    </button>
+                    <button class="filtro-btn" data-filter="snacks">
+                        <i class="fas fa-cookie"></i> Snacks
+                    </button>
+                    <button class="filtro-btn" data-filter="accesorios">
+                        <i class="fas fa-paw"></i> Accesorios
+                    </button>
+                </div>
+
+                <div class="ordenamiento">
+                    <select id="ordenar-por">
+                        <option value="relevancia">Relevancia</option>
+                        <option value="precio-bajo">Precio: Menor a Mayor</option>
+                        <option value="precio-alto">Precio: Mayor a Menor</option>
+                        <option value="nuevos">Más Nuevos</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid de Productos -->
+        <section class="productos-section">
+            <div class="productos-grid">
+                <!-- Producto Card -->
+                <div class="producto-card" data-categoria="perros">
+                    <div class="producto-imagen">
+                        <span class="etiqueta-nuevo">Nuevo</span>
+                        <img src="images/productos/premium-adulto.jpg" alt="Crokelet Premium">
+                        <div class="producto-acciones">
+                            <button class="btn-favorito"><i class="far fa-heart"></i></button>
+                            <button class="btn-comparar"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <div class="producto-categoria">Perros Adultos</div>
+                        <h3>Crokelet Premium Adulto</h3>
+                        <div class="producto-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24 reseñas)</span>
+                        </div>
+                        <p>Fórmula especial con proteínas de alta calidad</p>
+                        <div class="producto-detalles">
+                            <div class="producto-peso">15 kg</div>
+                            <div class="precio">
+                                <span class="precio-anterior">$699.99</span>
+                                <span class="precio-actual">$599.99</span>
+                            </div>
+                        </div>
+                        <button class="btn-comprar">
+                            <i class="fas fa-shopping-cart"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- Repetir estructura para otros productos -->
+            </div>
+
+            <!-- Paginación -->
+            <div class="paginacion">
+                <button class="btn-pagina"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn-pagina activo">1</button>
+                <button class="btn-pagina">2</button>
+                <button class="btn-pagina">3</button>
+                <button class="btn-pagina"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2><i class="fas fa-envelope"></i> ¡Mantente Informado!</h2>
+                <p>Suscríbete para recibir ofertas exclusivas y novedades</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit" class="btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Principal #123</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@crokelet.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Preguntas Frecuentes</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Política de Devolución</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Envíos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
             <p>© 2024 Crokelet. Todos los derechos reservados.</p>
-            <p>Dirección: Calle Principal #123, Ciudad</p>
-            <p>Teléfono: (123) 456-7890 | Email: info@crokelet.com</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Filtrado de productos
+        document.querySelectorAll('.filtro-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filtro = this.dataset.filter;
+                document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('activo'));
+                this.classList.add('activo');
+                
+                document.querySelectorAll('.producto-card').forEach(card => {
+                    if (filtro === 'todos' || card.dataset.categoria === filtro) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Carrito
+        document.querySelectorAll('.btn-comprar').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const cartCount = document.querySelector('.cart-count');
+                cartCount.textContent = parseInt(cartCount.textContent) + 1;
+            });
+        });
+    </script>
 </body>
 </html>
