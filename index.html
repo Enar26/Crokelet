@@ -3,178 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Croquetas para Perros</title>
-    <style>
-        :root {
-            --primary-color: #4a90e2;
-            --secondary-color: #333;
-            --background-color: #f5f5f5;
-            --shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            background-color: var(--background-color);
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: var(--shadow);
-        }
-
-        .producto {
-            border: 1px solid #eee;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .producto-imagen {
-            flex: 0 0 300px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .producto-imagen img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .producto-contenido {
-            flex: 1;
-        }
-
-        .producto:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow);
-        }
-
-        .producto:hover img {
-            transform: scale(1.05);
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        h2 {
-            color: var(--secondary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 0.5rem;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        li {
-            padding: 0.5rem 0;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        li:before {
-            content: "✓";
-            color: var(--primary-color);
-            position: absolute;
-            left: 0;
-        }
-
-        .banner {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                margin: 1rem;
-                padding: 1rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-
-            .producto {
-                flex-direction: column;
-            }
-
-            .producto-imagen {
-                flex: 0 0 auto;
-            }
-        }
-    </style>
+    <meta name="description" content="Crokelet - La mejor nutrición para tu mascota. Alimentos premium para perros y gatos.">
+    <title>Crokelet - Nutrición experta para mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <img src="images/banner-croquetas.jpg" alt="Banner de croquetas premium para perros" class="banner">
-        
-        <h1>Croquetas para Perros</h1>
-        
-        <div class="producto">
-            <div class="producto-imagen">
-                <img src="images/croquetas-premium.jpg" alt="Croquetas Premium para Perros">
+    <header class="header">
+        <div class="nav-container">
+            <!-- Logo con enlace a inicio -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Crokelet Logo" class="logo-img">
+                </a>
             </div>
-            <div class="producto-contenido">
-                <h2>Croquetas Premium</h2>
-                <p>Elaboradas con ingredientes de alta calidad para mantener a tu mascota saludable.</p>
-                <ul>
-                    <li>Rico en proteínas</li>
-                    <li>Sin conservantes artificiales</li>
-                    <li>Vitaminas y minerales esenciales</li>
-                    <li>Ideal para todas las razas</li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="producto">
-            <div class="producto-imagen">
-                <img src="images/beneficios-croquetas.jpg" alt="Beneficios de nuestras croquetas">
-            </div>
-            <div class="producto-contenido">
-                <h2>Beneficios de nuestras croquetas</h2>
+            <!-- Navegación principal -->
+            <nav class="main-nav">
                 <ul>
-                    <li>Mejora la salud digestiva</li>
-                    <li>Fortalece el sistema inmunológico</li>
-                    <li>Mantiene el pelaje brillante</li>
-                    <li>Promueve dientes y huesos fuertes</li>
+                    <li><a href="index.html" class="active">
+                        <i class="fas fa-home"></i> Inicio
+                    </a></li>
+                    <li><a href="productos.html">
+                        <i class="fas fa-bone"></i> Productos
+                    </a></li>
+                    <li><a href="servicios.html">
+                        <i class="fas fa-stethoscope"></i> Servicios
+                    </a></li>
+                    <li><a href="nosotros.html">
+                        <i class="fas fa-users"></i> Nosotros
+                    </a></li>
+                    <li><a href="contacto.html">
+                        <i class="fas fa-envelope"></i> Contacto
+                    </a></li>
                 </ul>
-            </div>
-        </div>
+            </nav>
 
-        <div class="producto">
-            <div class="producto-imagen">
-                <img src="images/alimentacion-perros.jpg" alt="Guía de alimentación">
-            </div>
-            <div class="producto-contenido">
-                <h2>Recomendaciones de alimentación</h2>
-                <p>La cantidad diaria recomendada depende del tamaño y edad de tu perro:</p>
-                <ul>
-                    <li>Perros pequeños: 100-200g por día</li>
-                    <li>Perros medianos: 200-350g por día</li>
-                    <li>Perros grandes: 350-500g por día</li>
-                </ul>
+            <!-- Iconos de navegación -->
+            <div class="nav-icons">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
-    </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Nutrición Experta para tu Mascota</h1>
+                <p>Alimentación de calidad y cuidados especializados para el bienestar de tu mejor amigo</p>
+                <div class="hero-buttons">
+                    <a href="productos.html" class="btn-primary">
+                        <i class="fas fa-shopping-bag"></i> Ver Productos
+                    </a>
+                    <a href="servicios.html" class="btn-secondary">
+                        <i class="fas fa-paw"></i> Servicios
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-dog.jpg" alt="Perro feliz comiendo croquetas premium" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-truck"></i>
+                <h3>Envío Gratis</h3>
+                <p>En compras mayores a $999</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Garantía de Calidad</h3>
+                <p>100% satisfacción garantizada</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>Soporte 24/7</h3>
+                <p>Atención personalizada</p>
+            </div>
+        </section>
+
+        <!-- Enlaces rápidos a productos -->
+        <section class="categorias">
+            <a href="productos.html#perros" class="categoria-card">
+                <img src="images/perros-categoria.jpg" alt="Alimentos para Perros" loading="lazy">
+                <h3>Perros</h3>
+                <p>Nutrición especializada y snacks saludables</p>
+            </a>
+            <a href="productos.html#gatos" class="categoria-card">
+                <img src="images/gatos-categoria.jpg" alt="Alimentos para Gatos" loading="lazy">
+                <h3>Gatos</h3>
+                <p>Alimentación balanceada y premios</p>
+            </a>
+            <a href="servicios.html" class="categoria-card">
+                <img src="images/servicios-categoria.jpg" alt="Servicios Veterinarios" loading="lazy">
+                <h3>Servicios</h3>
+                <p>Asesoría nutricional y cuidado integral</p>
+            </a>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section class="productos-destacados">
+            <h2 class="text-center mb-2">Productos Destacados</h2>
+            <div class="productos-grid">
+                <!-- Los productos se mantienen igual -->
+            </div>
+            <div class="text-center mt-2">
+                <a href="productos.html" class="btn-primary">
+                    <i class="fas fa-plus"></i> Ver todos los productos
+                </a>
+            </div>
+        </section>
+
+        <!-- Enlace a Nosotros -->
+        <section class="about-preview">
+            <h2>Conoce Nuestra Historia</h2>
+            <p>Descubre cómo comenzamos y por qué somos la mejor opción para tu mascota.</p>
+            <a href="nosotros.html" class="btn-secondary">
+                <i class="fas fa-users"></i> Conoce más sobre nosotros
+            </a>
+        </section>
+
+        <!-- Formulario de Contacto Rápido -->
+        <section class="contacto-rapido">
+            <h2>¿Tienes dudas?</h2>
+            <p>Contáctanos rápidamente o visita nuestra página de contacto para más opciones.</p>
+            <div class="buttons-group">
+                <a href="contacto.html" class="btn-primary">
+                    <i class="fas fa-envelope"></i> Página de Contacto
+                </a>
+                <a href="tel:+123456789" class="btn-secondary">
+                    <i class="fas fa-phone"></i> Llamar ahora
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer con enlaces -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Principal #123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@crokelet.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Crokelet. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para menú móvil -->
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
