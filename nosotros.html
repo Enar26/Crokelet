@@ -3,120 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce la historia y el equipo detrás de Crokelet, líderes en nutrición para mascotas">
     <title>Nosotros - Crokelet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div class="logo">
-            <img src="images/logo.png" alt="Crokelet Logo" class="logo-img">
-        </div>
-
-        <div class="historia-section">
-            <h1>Nuestra Historia</h1>
-            <p>Fundada en 2024, Crokelet nació de la pasión por la nutrición y el bienestar animal. Comenzamos como una pequeña tienda especializada en alimentación para mascotas y hoy somos líderes en nutrición y cuidado integral para animales de compañía.</p>
-        </div>
-
-        <h2>Nuestros Valores</h2>
-        <div class="valores-grid">
-            <div class="valor-card">
-                <div class="valor-icono">🐾</div>
-                <h3>Calidad</h3>
-                <p>Solo los mejores ingredientes y productos para tu mascota</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Crokelet Logo" class="logo-img">
+                </a>
             </div>
-            <div class="valor-card">
-                <div class="valor-icono">💝</div>
-                <h3>Compromiso</h3>
-                <p>Dedicación total al bienestar animal</p>
-            </div>
-            <div class="valor-card">
-                <div class="valor-icono">🤝</div>
-                <h3>Confianza</h3>
-                <p>Relaciones duraderas con nuestros clientes</p>
-            </div>
-            <div class="valor-card">
-                <div class="valor-icono">🎓</div>
-                <h3>Experiencia</h3>
-                <p>Conocimiento y profesionalismo en cada servicio</p>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="productos.html"><i class="fas fa-bone"></i> Productos</a></li>
+                    <li><a href="servicios.html"><i class="fas fa-stethoscope"></i> Servicios</a></li>
+                    <li><a href="nosotros.html" class="active"><i class="fas fa-users"></i> Nosotros</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             </div>
         </div>
+    </header>
 
-        <h2>Nuestro Equipo</h2>
-        <div class="equipo-grid">
-            <div class="miembro-equipo">
-                <img src="https://via.placeholder.com/150" alt="Director">
-                <h3>Dra. Maria Ramos</h3>
-                <p>Director General</p>
-                <p>Veterinaria especialista en nutrición animal</p>
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <h1>Nuestra Historia</h1>
+                <p class="hero-text">Fundada en 2024, Crokelet nació de la pasión por la nutrición y el bienestar animal. Comenzamos como una pequeña tienda especializada y hoy somos líderes en nutrición y cuidado integral para mascotas.</p>
             </div>
-            <div class="miembro-equipo">
-                <img src="https://via.placeholder.com/150" alt="Nutricionista">
-                <h3>Dr. Amir Enriquez</h3>
-                <p>Nutricionista Animal</p>
-                <p>Experto en planes de alimentación personalizados</p>
+            <div class="about-hero-image">
+                <img src="images/about-hero.jpg" alt="Equipo Crokelet" loading="lazy">
             </div>
-            <div class="miembro-equipo">
-                <img src="https://via.placeholder.com/150" alt="Veterinario">
-                <h3>Dr. Nicolas Calderón</h3>
-                <p>Veterinario Principal</p>
-                <p>Especialista en medicina preventiva</p>
+        </section>
+
+        <!-- Valores -->
+        <section class="valores-section">
+            <h2 class="section-title"><i class="fas fa-star"></i> Nuestros Valores</h2>
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Calidad</h3>
+                    <p>Solo los mejores ingredientes y productos para tu mascota</p>
+                </div>
+                <div class="valor-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Compromiso</h3>
+                    <p>Dedicación total al bienestar animal</p>
+                </div>
+                <div class="valor-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Confianza</h3>
+                    <p>Relaciones duraderas con nuestros clientes</p>
+                </div>
+                <div class="valor-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Experiencia</h3>
+                    <p>Conocimiento y profesionalismo en cada servicio</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipo -->
+        <section class="equipo-section">
+            <h2 class="section-title"><i class="fas fa-users"></i> Nuestro Equipo</h2>
+            <div class="equipo-grid">
+                <div class="miembro-equipo">
+                    <div class="miembro-imagen">
+                        <img src="images/team/maria-ramos.jpg" alt="Dra. Maria Ramos">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="miembro-info">
+                        <h3>Dra. Maria Ramos</h3>
+                        <span class="cargo">Directora General</span>
+                        <p>Veterinaria especialista en nutrición animal</p>
+                    </div>
+                </div>
+                <!-- Repetir estructura para otros miembros -->
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="timeline-section">
+            <h2 class="section-title"><i class="fas fa-history"></i> Nuestra Trayectoria</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Agosto 2024</h3>
+                        <p>Establecimiento formal de la empresa</p>
+                        <img src="images/timeline/fundacion.jpg" alt="Fundación Crokelet" loading="lazy">
+                    </div>
+                </div>
+                <!-- Repetir estructura para otros eventos -->
+            </div>
+        </section>
+
+        <!-- Certificaciones -->
+        <section class="certificaciones-section">
+            <h2 class="section-title"><i class="fas fa-certificate"></i> Certificaciones</h2>
+            <div class="certificaciones-grid">
+                <div class="certificacion-card">
+                    <img src="images/certificaciones/iso9001.png" alt="ISO 9001">
+                    <h3>ISO 9001</h3>
+                    <p>Calidad en procesos</p>
+                    <a href="#" class="btn-secondary">Ver detalles</a>
+                </div>
+                <!-- Repetir estructura para otras certificaciones -->
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>¿Quieres ser parte de nuestra historia?</h2>
+            <p>Únete a nuestra comunidad de amantes de las mascotas</p>
+            <div class="cta-buttons">
+                <a href="contacto.html" class="btn-primary">Contáctanos</a>
+                <a href="productos.html" class="btn-secondary">Ver productos</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Principal #123</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@crokelet.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
-
-        <h2>Nuestra Trayectoria</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Agosto de 2024</h3>
-                <p>La empresa se establece formalmente, sentando las bases de su misión y visión, con un enfoque en crear croquetas saludables y nutritivas para perros y gatos.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Septiembre de 2024</h3>
-                <p>Se exploran diversas combinaciones de ingredientes naturales, asegurando que cada uno cumpla con los valores de la empresa y no tenga efectos secundarios negativos.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Octubre de 2024</h3>
-                <p>Se contratan expertos en nutrición animal y en producción alimentaria, consolidando un equipo alineado con los valores de la empresa.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Nobiembre de 2024</h3>
-                <p>Se finalizan los estudios y pruebas de producto, obteniendo una fórmula que cumple con los altos estándares definidos en la fase de valores.</p>
-            </div>
-        </div>
-
-        <h2>Certificaciones</h2>
-        <div class="certificaciones">
-            <div class="certificacion">
-                <img src="https://via.placeholder.com/100" alt="Certificación 1">
-                <h3>ISO 9001</h3>
-                <p>Calidad en procesos</p>
-            </div>
-            <div class="certificacion">
-                <img src="https://via.placeholder.com/100" alt="Certificación 2">
-                <h3>Pet Care</h3>
-                <p>Excelencia en cuidado animal</p>
-            </div>
-            <div class="certificacion">
-                <img src="https://via.placeholder.com/100" alt="Certificación 3">
-                <h3>Vet Quality</h3>
-                <p>Servicios veterinarios premium</p>
-            </div>
-        </div>
-
-        <footer>
+        <div class="footer-bottom">
             <p>© 2024 Crokelet. Todos los derechos reservados.</p>
-            <p>Dirección: Calle Principal #123, Ciudad</p>
-            <p>Teléfono: (123) 456-7890 | Email: info@crokelet.com</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Menú móvil
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('show');
+        });
+
+        // Animación al scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.timeline-item, .valor-card, .miembro-equipo');
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('animate');
+                }
+            });
+        });
+
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    </script>
 </body>
 </html>
